@@ -4,10 +4,10 @@ $( document ).ready(function() {
   alert("start map.");
 */
 
-  // Usage example:
+  //Set Options at Runtime.
   var options = {
-    width : 500,
-    height : 150
+    width   : 300,
+    height  : 225
   };
 
   $( ".map" ).displayA11yGmap(options);

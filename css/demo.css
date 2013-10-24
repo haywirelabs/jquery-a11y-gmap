@@ -1,18 +1,26 @@
-body{
-  color: #C7F464;
-  font-family: 'Nixie One', cursive;
-  background-color: #556270;
-  font-size: 2.5em;
+body {
+  color : #C7F464;
+  font-family : 'Nixie One', cursive;
+  background-color : #556270;
+  font-size : 2.5em;
 }
 
-a{
-  color: #FFEEEE;
+h1 {
+  color : #4ECDC4;
+  padding : 25px;
 }
 
-h1{
-  color: #4ECDC4;
+a {
+  color : #FFFFFF;
 }
 
-.map{
-  background-color: #FF6B6B;
+a:hover {
+  color: : #CCCCCC;
+}
+
+.map {
+  float : left;
+  background-color : #FF6B6B;
+  border : solid #222222 1px;
+  margin : 5px;
 }
