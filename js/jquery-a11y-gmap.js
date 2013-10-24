@@ -1,17 +1,19 @@
 (function( $ ) {
   $.fn.displayA11yGmap = function( options ) {
 
+//    alert(options);
+
     //defaults
     var settings = $.extend({
-      width : "50px",
-      height : "50px",
+      width : 50,
+      height : 50,
     }, options );
 
 
-    return this.filter( "a" ).each(function() {
-      $( this ).append( " (" + $( this ).attr( "href" ) + ")" );
+    return this.each(function() {
+      $(this).css("width", settings.width);
+      $(this).css("height", settings.height);
     });
-
 
   };
 }( jQuery ));
