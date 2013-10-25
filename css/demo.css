@@ -2,7 +2,7 @@ body {
   color : #C7F464;
   font-family : 'Inconsolata', sans-serif;
   background-color : #556270;
-  font-size : 20px;
+  font-size : 22px;
 }
 
 h1 {
@@ -25,7 +25,7 @@ a:hover {
   color: : #CCCCCC;
 }
 .map-container {
-  font-size : 14px;
+  font-size : 16px;
   border : solid 1px #666;
   margin : 20px;
   padding : 20px;
