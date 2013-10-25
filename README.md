@@ -19,4 +19,4 @@ Installation
 Usage
 -----
 
-jquery-a11y-gmap usage is defined on the demo page.
+jquery-a11y-gmap usage is defined on the [demo page](http://haywirelabs.com/devbox/jquery-a11y-gmap/).
