@@ -13,7 +13,7 @@ Installation
 
 - Download jquery-a11y-gmap.js and install to your local assets directory.
 - Include the file within your application.
-  - <script src="js/jquery-a11y-gmap.js"></script>
+  - ```javascript <script src="js/jquery-a11y-gmap.js"></script> ```
 - Done.
 
 Usage
