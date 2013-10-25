@@ -1,15 +1,22 @@
 body {
   color : #C7F464;
-  font-family : 'Nixie One', cursive;
+  font-family : 'Inconsolata', sans-serif;
   background-color : #556270;
-  font-size : 2.5em;
+  font-size : 20px;
 }
 
 h1 {
   color : #4ECDC4;
   padding : 25px;
 }
-
+h2{
+}
+p {
+	color : #FFFFFF;
+}
+pre {
+	color : #CCCCCC;
+}
 a {
   color : #FFFFFF;
 }
@@ -17,9 +24,13 @@ a {
 a:hover {
   color: : #CCCCCC;
 }
-
+.map-container {
+  font-size : 14px;
+  border : solid 1px #666;
+  margin : 20px;
+  padding : 20px;
+}
 .map {
-  float : left;
   background-color : #FF6B6B;
   border : solid #222222 1px;
   margin : 5px;

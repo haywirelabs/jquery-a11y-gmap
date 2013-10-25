@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>jquery-a11y-gmap plugin demo</title>
 
   <link rel="stylesheet" type="text/css" href="css/demo.css" />
-  <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <script src="js/jquery-a11y-gmap.js"></script>
   <script src="js/demo.js"></script>
@@ -13,15 +13,69 @@
 
   <h1>jquery-a11y-gmap demo</h1>
   <div>
-    <div class="map">
-      I'm the map div.
+    <div class="map-container">
+		<h2>Location : "catonsville, maryland"</h2>
+		<p>This map is showing a 300x225 map of Catonsville, Maryland using a city/state string query separated by comma.</p>
+		<p>Example Usage : 
+			<pre>
+var options = {
+	width   : 300,
+	height  : 225
+    };
+$( "#map1" ).displayA11yGmap("catonsville, maryland", options);
+			</pre>
+		</p>
+		<div class="map" id="map1"></div>
     </div>
-    <div class="map">
-      <a href="http://maps.google.com">I'm the map.</a>
+	
+	<div class="map-container">
+		<h2>Location : "42.46441961300047, -87.84984078299965"</h2>
+		<p>This map presents a default sized map of a Latitude/Longitude location using a string query separating the lat and long by comma.</p>
+		<p>Example Usage : 
+			<pre>
+
+/* No Options are set - application will use defaults set on jquery-a11y-gmap.js */
+
+$( "#map2" ).displayA11yGmap("42.46441961300047, -87.84984078299965");
+			</pre>
+		</p>
+		<div class="map" id="map2"></div>
     </div>
-    <div class="map">
-      I'm the map.
-    </div>
+	
+	<div class="map-container">
+		<h2>Location : "Des Plaines, IL"</h2>
+		<p>This map presents a 300x225 map of a city/state location.  The location string is comma separated as in the first example, however, note that this also takes state abbreviations</p>
+		<p>Example Usage : 
+			<pre>
+var options = {
+	width   : 300,
+	height  : 225
+    };
+	
+$( "#map3" ).displayA11yGmap("Des Plaines, IL", options);
+			</pre>
+		</p>
+		<div class="map" id="map3"></div>
+	</div>
+
+	<div class="map-container">
+		<h2>Location : "800 Crystal Lake Blvd, Suite 111 Iron Mountain Mi 49801"</h2>
+		<p>This map presents a larger 400x325 map of a full address location.  Additionally, a custom zoom level and marker color are defined in the options here.</p>
+		<p>Example Usage : 
+			<pre>
+var options = {
+	width        : 400,
+	height       : 325,
+	marker_color : 'red',
+	zoom         : 15
+    };
+
+$( "#map4" ).displayA11yGmap("800 Crystal Lake Blvd, Suite 111 Iron Mountain Mi 49801", options);
+			</pre>
+		</p>
+		<div class="map" id="map4"></div>
+	</div>
+	
   </div>
 
 </body>
