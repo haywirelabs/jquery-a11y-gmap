@@ -24,7 +24,7 @@
       //alert(target);
       
       if( target === undefined ){
-        target = $(this).attr("data-a11y-gmap-location");
+        target = $(this).attr("data-location");
       }    
       
       map_image_url = settings.map_image_url + 'center=' + target;
