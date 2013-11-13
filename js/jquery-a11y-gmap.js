@@ -7,6 +7,7 @@
     var settings = $.extend({
       width         : 200,
       height        : 200,
+      key           : 'AIzaSyAX-vPanPFJFKJNUlW7K2MWfg83piTNUPw',
       map_link_url  : 'https://maps.google.com/?q=',
       map_image_url : 'http://maps.googleapis.com/maps/api/staticmap?',
       marker_color  : 'blue',
@@ -33,6 +34,7 @@
       map_image_url += '&size=' + settings.width + 'x' + settings.height;
       map_image_url += '&sensor=' + settings.sensor;
       map_image_url += '&markers=' + 'color:' + settings.marker_color + '%7C' + target;
+      map_image_url += '&key=' + settings.key;
 
       if( target === undefined ){
         map_image_element = '';
