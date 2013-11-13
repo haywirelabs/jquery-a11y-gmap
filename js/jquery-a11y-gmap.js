@@ -17,23 +17,29 @@
     return this.each(function() {
     
       /*
-      *  If target is set to "data-a11y-gmap-location", the target will
-      *  be set to the data-a11y-gmap-location attribute set in HTML
+      *  If target is undefined, the target will try to
+      *  set to the data-location attribute set in HTML
       */
       
       //alert(target);
       
       if( target === undefined ){
         target = $(this).attr("data-location");
-      }    
-      
+      }
+
+    
       map_image_url = settings.map_image_url + 'center=' + target;
       map_image_url += '&zoom=' + settings.zoom;
       map_image_url += '&size=' + settings.width + 'x' + settings.height;
       map_image_url += '&sensor=' + settings.sensor;
       map_image_url += '&markers=' + 'color:' + settings.marker_color + '%7C' + target;
-  
-      map_image_element = '<a href="' + settings.map_link_url + target + '"><img src="' + map_image_url + '" alt="Map of ' + target + '" title="Map of ' + target + '" /></a>';
+
+      if( target === undefined ){
+        map_image_element = '';
+      }
+      else{  
+        map_image_element = '<a href="' + settings.map_link_url + target + '"><img src="' + map_image_url + '" alt="Map of ' + target + '" title="Map of ' + target + '" /></a>';
+      }
     
       $(this).css("width", settings.width);
       $(this).css("height", settings.height);
