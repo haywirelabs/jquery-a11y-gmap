@@ -78,5 +78,25 @@ $( "#map4" ).displayA11yGmap("800 Crystal Lake Blvd, Suite 111 Iron Mountain Mi 
 	
   </div>
 
+	<div class="map-container">
+		<h2>Location : "Kansas City, MO"</h2>
+		<p>This functionality extends the original plugin by reading from the data-map-location HTML5 attribute to identify the map location.</p>
+		<p>Example Usage : 
+			<pre>
+$( ".map-location" ).displayA11yGmap("data-map-location");
+
+&lt;div class="map-location" data-a11y-gmap-location="Kansas City, MO"&gt;&lt;/div&gt;
+
+			</pre>
+		</p>
+		<div class="map-location" data-a11y-gmap-location="Kansas City, MO"></div>
+		<div class="map-location" data-a11y-gmap-location="Boise, ID"></div>
+		<div class="map-location" data-a11y-gmap-location="Cheyenne, WY"></div>
+	</div>
+	
+  </div>
+
+
+
 </body>
 </html>

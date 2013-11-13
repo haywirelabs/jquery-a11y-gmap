@@ -16,8 +16,8 @@ $( document ).ready(function() {
   var map4options = {
     width        : 400,
     height       : 325,
-	marker_color : 'red',
-	zoom         : 15
+    marker_color : 'red',
+    zoom         : 15
   };
 
   
@@ -49,6 +49,7 @@ $( document ).ready(function() {
   $( "#map2" ).displayA11yGmap(targets[1]);
   $( "#map3" ).displayA11yGmap(targets[2], options);  
   $( "#map4" ).displayA11yGmap(targets[3], map4options);
+  $( ".map-location" ).displayA11yGmap();
 
 /*
   alert("end map.");
