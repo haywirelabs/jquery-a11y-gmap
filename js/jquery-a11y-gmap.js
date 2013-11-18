@@ -41,11 +41,12 @@
       }
       else{  
         map_image_element = '<a href="' + settings.map_link_url + target + '"><img src="' + map_image_url + '" alt="Map of ' + target + '" title="Map of ' + target + '" /></a>';
+        map_link = '<div class="a11y-gmap-link"><a href="' + settings.map_link_url + target + '">Get Directions</a></div>';
       }
     
       $(this).css("width", settings.width);
       $(this).css("height", settings.height);
-      $(this).html(map_image_element);
+      $(this).html(map_image_element + map_link);
       
       target = undefined;
       
