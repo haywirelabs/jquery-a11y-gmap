@@ -1,3 +1,6 @@
+
+test = ''
+
 (function( $ ) {
   $.fn.displayA11yGmap = function( target , options ) {
 
@@ -16,19 +19,19 @@
     }, options );
 
     return this.each(function() {
-    
+
       /*
       *  If target is undefined, the target will try to
       *  set to the data-location attribute set in HTML
       */
-      
+
       //alert(target);
-      
+
       if( target === undefined ){
         target = $(this).attr("data-location");
       }
 
-    
+
       map_image_url = settings.map_image_url + 'center=' + target;
       map_image_url += '&zoom=' + settings.zoom;
       map_image_url += '&size=' + settings.width + 'x' + settings.height;
@@ -39,17 +42,17 @@
       if( target === undefined ){
         map_image_element = '';
       }
-      else{  
+      else{
         map_image_element = '<a href="' + settings.map_link_url + target + '"><img src="' + map_image_url + '" alt="Map of ' + target + '" title="Map of ' + target + '" /></a>';
         map_link = '<div class="a11y-gmap-link"><a href="' + settings.map_link_url + target + '">Get Directions</a></div>';
       }
-    
+
       $(this).css("width", settings.width);
       $(this).css("height", settings.height);
       $(this).html(map_image_element + map_link);
-      
+
       target = undefined;
-      
+
     });
 
 
