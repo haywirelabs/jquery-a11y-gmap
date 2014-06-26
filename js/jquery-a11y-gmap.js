@@ -1,6 +1,7 @@
 
 test = ''
 //Test Change
+//Another Test Change
 
 (function( $ ) {
   $.fn.displayA11yGmap = function( target , options ) {
